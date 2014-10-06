@@ -19,7 +19,6 @@ if (casper.cli.args[0]) {
 // 外部ファイルから対象page定義を読み込み
 phantom.injectJs('pages.js');
 
-
 // casper.start内で対象URLを接続させてキャプチャーを取りたいので、初回の接続先はダミーURLを指定
 // 初回をダミーURL用いない書き方がわからない、、、
 casper.start('http://www.google.co.jp', function() {
@@ -30,7 +29,6 @@ casper.start('http://www.google.co.jp', function() {
   });
 
 }).run();
-
 
 /**
  * urlを画像名にしているため、保存するのに安全な文字列に置換する
